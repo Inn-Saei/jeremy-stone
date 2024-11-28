@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message de Rançon</title>
+    <style>
+        /* Style de la page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background: black;
+            color: lime;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: glitch 1.5s infinite;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+
+        .ransom {
+            font-size: 1.8em;
+            color: red;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px lime, -2px -2px red;
+            }
+            50% {
+                text-shadow: -2px -2px lime, 2px 2px red;
+            }
+            100% {
+                text-shadow: 2px 2px lime, -2px -2px red;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .actions {
+            margin-top: 20px;
+        }
+
+        .button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            color: black;
+            background: lime;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>JÉRÉMY STONE EST ENTRE NOS MAINS</h1>
+    <p>Vous avez 24 heures pour répondre à nos exigences.</p>
+    <p class="ransom">Montant demandé : 1 000 000 € en cryptomonnaie.</p>
+    <div class="actions">
+        <a class="button" href="https://example.com" target="_blank">Preuve en Vidéo</a>
+    </div>
+</body>
+</html>
